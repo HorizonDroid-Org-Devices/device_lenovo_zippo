@@ -8,6 +8,9 @@
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
+    
+# BCR Basic Call Recording
+$(call inherit-product, vendor/bcr/bcr.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
