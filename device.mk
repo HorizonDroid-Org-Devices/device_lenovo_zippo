@@ -12,6 +12,10 @@ DEVICE_PACKAGE_OVERLAYS += \
 # BCR Basic Call Recording
 $(call inherit-product, vendor/bcr/bcr.mk)
 
+# Remove some prebuilt apps
+PRODUCT_PACKAGES += \
+	 RemovePackagesDevice
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
